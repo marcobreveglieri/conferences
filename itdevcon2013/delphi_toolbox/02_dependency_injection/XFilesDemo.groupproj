@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0D119779-703C-4DA5-BC25-0FC6638EDBDA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="XFilesSystem.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="UIApp\XFilesSystemApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="XFilesSystem">
+        <MSBuild Projects="XFilesSystem.dproj"/>
+    </Target>
+    <Target Name="XFilesSystem:Clean">
+        <MSBuild Projects="XFilesSystem.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XFilesSystem:Make">
+        <MSBuild Projects="XFilesSystem.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XFilesSystemApp">
+        <MSBuild Projects="UIApp\XFilesSystemApp.dproj"/>
+    </Target>
+    <Target Name="XFilesSystemApp:Clean">
+        <MSBuild Projects="UIApp\XFilesSystemApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XFilesSystemApp:Make">
+        <MSBuild Projects="UIApp\XFilesSystemApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="XFilesSystem;XFilesSystemApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="XFilesSystem:Clean;XFilesSystemApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="XFilesSystem:Make;XFilesSystemApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
