@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B6F1F71E-BB65-4047-B054-3549E05B4F0A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Pig\Pig.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PigRemote\PigRemote.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Pig">
+        <MSBuild Projects="Pig\Pig.dproj"/>
+    </Target>
+    <Target Name="Pig:Clean">
+        <MSBuild Projects="Pig\Pig.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Pig:Make">
+        <MSBuild Projects="Pig\Pig.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PigRemote">
+        <MSBuild Projects="PigRemote\PigRemote.dproj"/>
+    </Target>
+    <Target Name="PigRemote:Clean">
+        <MSBuild Projects="PigRemote\PigRemote.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PigRemote:Make">
+        <MSBuild Projects="PigRemote\PigRemote.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Pig;PigRemote"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Pig:Clean;PigRemote:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Pig:Make;PigRemote:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

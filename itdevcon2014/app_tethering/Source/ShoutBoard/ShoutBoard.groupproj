@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{123E7BC0-8A22-4168-8DD2-1C60C4826954}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ShoutController\ShoutController.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ShoutDisplay\ShoutDisplay.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ShoutController">
+        <MSBuild Projects="ShoutController\ShoutController.dproj"/>
+    </Target>
+    <Target Name="ShoutController:Clean">
+        <MSBuild Projects="ShoutController\ShoutController.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ShoutController:Make">
+        <MSBuild Projects="ShoutController\ShoutController.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ShoutDisplay">
+        <MSBuild Projects="ShoutDisplay\ShoutDisplay.dproj"/>
+    </Target>
+    <Target Name="ShoutDisplay:Clean">
+        <MSBuild Projects="ShoutDisplay\ShoutDisplay.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ShoutDisplay:Make">
+        <MSBuild Projects="ShoutDisplay\ShoutDisplay.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ShoutController;ShoutDisplay"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ShoutController:Clean;ShoutDisplay:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ShoutController:Make;ShoutDisplay:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

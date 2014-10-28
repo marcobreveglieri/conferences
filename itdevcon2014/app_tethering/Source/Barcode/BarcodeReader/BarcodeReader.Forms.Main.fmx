@@ -1,0 +1,79 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Barcode Reader'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object HeaderToolBar: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object HeaderLabel: TLabel
+      Align = Contents
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Barcode Reader'
+    end
+  end
+  object FooterToolBar: TToolBar
+    Align = Bottom
+    Position.Y = 519.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    object ScanButton: TButton
+      Action = ScanAction
+      Align = Client
+      Enabled = True
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Visible = True
+    end
+  end
+  object CodeLabel: TLabel
+    Align = Client
+    Scale.X = 2.000000000000000000
+    Scale.Y = 4.000000000000000000
+    Size.Width = 192.000000000000000000
+    Size.Height = 117.750000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = '0000000000000'
+  end
+  object BarcodeManager: TTetheringManager
+    Text = 'BarcodeManager'
+    AllowedAdapters = 'Network'
+    Left = 48
+    Top = 72
+  end
+  object BarcodeAppProfile: TTetheringAppProfile
+    Manager = BarcodeManager
+    Text = 'BarcodeAppProfile'
+    Group = 'Barcode'
+    Actions = <>
+    Resources = <>
+    Left = 160
+    Top = 72
+  end
+  object MainActionList: TActionList
+    Left = 48
+    Top = 152
+    object ScanAction: TAction
+      Text = 'Scan'
+      OnExecute = ScanActionExecute
+    end
+  end
+end

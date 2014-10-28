@@ -1,0 +1,122 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Chat On The Fly'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object HeaderToolBar: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object HeaderLabel: TLabel
+      Align = Client
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Chat On The Fly'
+    end
+  end
+  object FooterToolBar: TToolBar
+    Align = Bottom
+    Position.Y = 519.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 2
+    object MessageEdit: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      ReturnKeyType = Send
+      Size.Width = 336.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Message'
+      KillFocusByReturn = True
+      OnKeyUp = MessageEditKeyUp
+    end
+    object SendMessageButton: TButton
+      Action = SendMessageAction
+      Align = Right
+      Enabled = True
+      Position.X = 336.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'nexttoolbuttonbordered'
+      TabOrder = 1
+      Visible = True
+    end
+  end
+  object ChatMemo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 423.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    ReadOnly = True
+  end
+  object NameToolBar: TToolBar
+    Position.Y = 48.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    object NameEdit: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      ReturnKeyType = Done
+      Size.Width = 285.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      KillFocusByReturn = True
+    end
+    object NameLabel: TLabel
+      Align = Left
+      AutoSize = True
+      Size.Width = 99.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'Your Name:'
+    end
+  end
+  object MainActionList: TActionList
+    OnUpdate = MainActionListUpdate
+    Left = 40
+    Top = 136
+    object SendMessageAction: TAction
+      OnExecute = SendMessageActionExecute
+    end
+  end
+  object ChatManager: TTetheringManager
+    OnRequestManagerPassword = ChatManagerRequestManagerPassword
+    Password = 'toc'
+    Text = 'ChatManager'
+    AllowedAdapters = 'Network'
+    Left = 40
+    Top = 200
+  end
+  object ChatAppProfile: TTetheringAppProfile
+    Manager = ChatManager
+    Text = 'ChatAppProfile'
+    Group = 'ChatOnTheFly'
+    Actions = <>
+    Resources = <>
+    OnResourceReceived = ChatAppProfileResourceReceived
+    Left = 152
+    Top = 200
+  end
+end

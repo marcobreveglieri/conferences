@@ -1,0 +1,67 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Shout Display'
+  ClientHeight = 724
+  ClientWidth = 1044
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  ShowFullScreenIcon = True
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object BackgroundRect: TRectangle
+    Align = Client
+    Fill.Color = claAzure
+    Size.Width = 1044.000000000000000000
+    Size.Height = 724.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object MessageLabel: TLabel
+    Align = Client
+    StyledSettings = [Family, Style]
+    Margins.Left = 8.000000000000000000
+    Margins.Top = 8.000000000000000000
+    Margins.Right = 8.000000000000000000
+    Margins.Bottom = 8.000000000000000000
+    Scale.X = 4.000000000000000000
+    Scale.Y = 4.000000000000000000
+    Size.Width = 245.000000000000000000
+    Size.Height = 165.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.FontColor = claDarkblue
+    TextSettings.HorzAlign = Center
+    Text = '???'
+  end
+  object TetheringManager: TTetheringManager
+    OnEndAutoConnect = TetheringManagerEndAutoConnect
+    Text = 'TetheringManager'
+    AllowedAdapters = 'Network'
+    Left = 48
+    Top = 24
+  end
+  object TetheringAppProfile: TTetheringAppProfile
+    Manager = TetheringManager
+    Text = 'TetheringAppProfile'
+    Group = 'Shout'
+    Actions = <>
+    Resources = <
+      item
+        Name = 'MessageText'
+        IsPublic = True
+        Kind = Mirror
+        OnResourceReceived = TetheringAppProfileResources0ResourceReceived
+      end
+      item
+        Name = 'MessageBackgroundColor'
+        IsPublic = True
+        Kind = Mirror
+        OnResourceReceived = TetheringAppProfileResources1ResourceReceived
+      end>
+    Left = 200
+    Top = 24
+  end
+end

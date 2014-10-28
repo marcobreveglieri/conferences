@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6E58E9A3-F3FF-4881-A556-7C059989CF8D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PptPlayer\PptPlayer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PptRemote\PptRemote.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PptPlayer">
+        <MSBuild Projects="PptPlayer\PptPlayer.dproj"/>
+    </Target>
+    <Target Name="PptPlayer:Clean">
+        <MSBuild Projects="PptPlayer\PptPlayer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PptPlayer:Make">
+        <MSBuild Projects="PptPlayer\PptPlayer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PptRemote">
+        <MSBuild Projects="PptRemote\PptRemote.dproj"/>
+    </Target>
+    <Target Name="PptRemote:Clean">
+        <MSBuild Projects="PptRemote\PptRemote.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PptRemote:Make">
+        <MSBuild Projects="PptRemote\PptRemote.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PptPlayer;PptRemote"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PptPlayer:Clean;PptRemote:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PptPlayer:Make;PptRemote:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,15 @@
+inherited MainForm_LgXhdpiPh: TMainForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited BackgroundRect: TRectangle
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+  end
+  inherited MessageLabel: TLabel
+    Scale.X = 2.000000000000000000
+    Scale.Y = 2.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 331.500000000000000000
+  end
+end

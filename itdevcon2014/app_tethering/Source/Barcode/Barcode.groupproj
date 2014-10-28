@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{892CF651-AEB9-44B0-801A-B208F9109429}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="BarcodeReader\BarcodeReader.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BarcodeClient\BarcodeClient.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BarcodeReader">
+        <MSBuild Projects="BarcodeReader\BarcodeReader.dproj"/>
+    </Target>
+    <Target Name="BarcodeReader:Clean">
+        <MSBuild Projects="BarcodeReader\BarcodeReader.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BarcodeReader:Make">
+        <MSBuild Projects="BarcodeReader\BarcodeReader.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BarcodeClient">
+        <MSBuild Projects="BarcodeClient\BarcodeClient.dproj"/>
+    </Target>
+    <Target Name="BarcodeClient:Clean">
+        <MSBuild Projects="BarcodeClient\BarcodeClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BarcodeClient:Make">
+        <MSBuild Projects="BarcodeClient\BarcodeClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BarcodeReader;BarcodeClient"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BarcodeReader:Clean;BarcodeClient:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BarcodeReader:Make;BarcodeClient:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
