@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript DOM</title>
+</head>
+<body>
+    <input id="a" type="number" value="3"/>
+        +
+    <input id="b" type="number" value="2">
+        =
+    <input id="r" type="number" value="?" readonly>
+        &nbsp;
+    <input type="button" onclick="calculate()" value="Calcola">
+
+    <script>
+        function calculate()
+        {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            var r = a + b;
+            document.getElementById("r").value = r;
+        }
+    </script>
+</body>
+</html>

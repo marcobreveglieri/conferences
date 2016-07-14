@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript DOM</title>
+    <script src="../../shared/jquery/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+    <input id="a" type="number" value="3"/>
+        +
+    <input id="b" type="number" value="2">
+        =
+    <input id="r" type="number" value="?" readonly>
+        &nbsp;
+    <input id="calcButton" type="button" value="Calcola">
+
+    <script>
+        $(document).ready(function () {
+           $("#calcButton").click(function () {
+               var a = parseInt($("#a").val());
+               var b = parseInt($("#b").val());
+               var r = a + b;
+               $("#r").val(r);
+           });
+        });
+    </script>
+</body>
+</html>
