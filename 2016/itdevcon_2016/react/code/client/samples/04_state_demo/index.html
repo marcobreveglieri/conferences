@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>React!</title>
+    <script src="../../shared/react/react.min.js"></script>
+    <script src="../../shared/react/react-dom.min.js"></script>
+    <script src="../../shared/react/JSXTransformer.js"></script>
+    <style type="text/css">
+        .header {
+            border-bottom: solid 1px darkred;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script type="text/jsx">
+
+        var LikeButton = React.createClass({
+
+            getInitialState: function() {
+                return { liked: false };
+            },
+
+            doLike: function() {
+                this.setState({ liked: !this.state.liked });
+            },
+
+            render: function() {
+                var caption = this.state.liked ? "Non mi piace più" : "Mi piace";
+                return <button onClick={this.doLike}>{caption}</button>;
+            }
+        });
+
+        ReactDOM.render(<LikeButton />, document.getElementById("container"));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>React!</title>
+    <script src="../../shared/react/react.min.js"></script>
+    <script src="../../shared/react/react-dom.min.js"></script>
+    <script src="../../shared/react/JSXTransformer.js"></script>
+    <style type="text/css">
+        .header {
+            border-bottom: solid 1px darkred;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container"></div>
+
+    <script type="text/jsx">
+
+        var TitleHeader = React.createClass({
+            render: function () {
+                return <h1 className="header">{this.props.caption}</h1>
+            }
+        });
+
+        ReactDOM.render(<TitleHeader caption="Titolo di esempio" />, document.getElementById("container"));
+
+    </script>
+</body>
+</html>

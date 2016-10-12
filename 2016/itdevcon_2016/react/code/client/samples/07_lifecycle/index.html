@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>React!</title>
+    <link href="../../shared/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="../../shared/jquery/jquery-2.2.4.min.js"></script>
+    <script src="../../shared/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../shared/react/react.min.js"></script>
+    <script src="../../shared/react/react-dom.min.js"></script>
+    <script src="../../shared/react/JSXTransformer.js"></script>
+</head>
+<body>
+<div id="container"></div>
+
+<script type="text/jsx">
+
+    var Timer = React.createClass({
+
+        doTick: function () {
+            this.setState({ counter: this.state.counter + 1 });
+        },
+
+        resetCounter: function () {
+          this.setState({ counter: 0 });
+        },
+
+        componentDidMount: function () {
+            this.tickInterval = setInterval(this.doTick, 1000);
+        },
+
+        componentWillUnmount: function () {
+            clearInterval(this.tickInterval);
+        },
+
+        getInitialState: function () {
+            return { counter: 0 }
+        },
+
+        render: function () {
+            return (
+                <div className="well">
+                    <button type="button" title="Clic per resettare il timer" onClick={this.resetCounter}>Reset</button>
+                    &nbsp;
+                    <span className="glyphicon glyphicon-time"></span>
+                    &nbsp;
+                    <strong>{this.state.counter}</strong>
+                </div>
+            );
+        }
+    });
+
+    ReactDOM.render(<Timer />, document.getElementById('container'));
+
+</script>
+</body>
+</html>

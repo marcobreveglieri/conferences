@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>React!</title>
+    <link href="../../shared/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../shared/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../shared/react/react.min.js"></script>
+    <script src="../../shared/react/react-dom.min.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script type="text/javascript">
+
+        var titleElement = React.createElement('h1', { style: { fontSize: 'larger'} }, 'Titolo principale');
+
+        var par1Element = React.createElement('p', { className: 'text-info' }, 'Testo del primo paragrafo');
+        var par2Element = React.createElement('p', { className: 'text-success' }, 'Testo del secondo paragrafo');
+
+        var chapterFragment = [titleElement, par1Element, par2Element];
+
+        var articleElement = React.createElement('article', { className: 'container' }, chapterFragment);
+
+        ReactDOM.render(articleElement, document.getElementById('container'));
+
+    </script>
+</body>
+</html>

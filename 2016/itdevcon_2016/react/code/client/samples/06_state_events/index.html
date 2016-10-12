@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>React!</title>
+    <link href="../../shared/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../shared/jquery/jquery-2.2.4.min.js"></script>
+    <script src="../../shared/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../shared/react/react.min.js"></script>
+    <script src="../../shared/react/react-dom.min.js"></script>
+    <script src="../../shared/react/JSXTransformer.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script type="text/jsx">
+
+        var Counter = React.createClass({
+
+            incrementCount: function(){
+                this.setState({
+                    count: this.state.count + 1
+                });
+            },
+            getInitialState: function(){
+                return {
+                    count: 0
+                }
+            },
+            render: function(){
+                return (
+                    <div className="well">
+                        <h1>Numero di clic: {this.state.count}</h1>
+                        <button type="button" onClick={this.incrementCount}>Incrementa</button>
+                    </div>
+                );
+            }
+        });
+
+        ReactDOM.render(<Counter/>, document.getElementById('container'));
+
+    </script>
+</body>
+</html>

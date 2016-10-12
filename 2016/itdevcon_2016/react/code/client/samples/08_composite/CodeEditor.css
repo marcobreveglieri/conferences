@@ -1,0 +1,11 @@
+pre
+{
+    cursor: text;
+    font-size: xx-large;
+}
+
+.keyword
+{
+    font-weight: bold;
+    color: blue;
+}

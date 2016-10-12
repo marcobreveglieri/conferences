@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D206375D-530C-4D15-B20F-17147F476557}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Service\ITDevConBot.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Tests\ITDevBot.Tests.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ITDevConBot">
+        <MSBuild Projects="Service\ITDevConBot.dproj"/>
+    </Target>
+    <Target Name="ITDevConBot:Clean">
+        <MSBuild Projects="Service\ITDevConBot.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevConBot:Make">
+        <MSBuild Projects="Service\ITDevConBot.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ITDevBot_Tests">
+        <MSBuild Projects="Tests\ITDevBot.Tests.dproj"/>
+    </Target>
+    <Target Name="ITDevBot_Tests:Clean">
+        <MSBuild Projects="Tests\ITDevBot.Tests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevBot_Tests:Make">
+        <MSBuild Projects="Tests\ITDevBot.Tests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ITDevConBot;ITDevBot_Tests"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ITDevConBot:Clean;ITDevBot_Tests:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ITDevConBot:Make;ITDevBot_Tests:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

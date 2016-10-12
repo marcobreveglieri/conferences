@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello React!</title>
+    <script src="../../shared/react/react.min.js"></script>
+    <script src="../../shared/react/react-dom.min.js"></script>
+    <script src="../../shared/react/JSXTransformer.js"></script>
+</head>
+<body>
+
+    <div id="container"></div>
+
+    <script type="text/jsx">
+
+        var HelloWorld = React.createClass({
+
+            render: function() {
+                return <p>Hello <strong>React</strong>!</p>;
+            }
+
+        });
+
+        ReactDOM.render(<HelloWorld />, document.getElementById("container"));
+
+    </script>
+
+</body>
+</html>

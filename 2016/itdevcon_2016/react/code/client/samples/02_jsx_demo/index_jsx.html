@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>React</title>
+    <script src="../../shared/react/react.min.js"></script>
+    <script src="../../shared/react/react-dom.min.js"></script>
+    <script src="../../shared/react/JSXTransformer.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script type="text/jsx">
+        // Crea la lista degli elementi (usando JSX).
+        var listElement =
+            <ul className="list-of-items">
+                <li className="item-1">Item 1</li>
+                <li className="item-2">Item 2</li>
+                <li className="item-3">Item 3</li>
+            </ul>;
+
+        // Esegue il rendering della lista nella pagina.
+        ReactDOM.render(listElement, document.getElementById("container"));
+    </script>
+
+</body>
+</html>
