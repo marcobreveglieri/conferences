@@ -1,0 +1,891 @@
+1{
+  "artists":
+  {
+    "href":"https://api.spotify.com/v1/search?query=sinatra&type=artist&offset=0&limit=20",
+    "items":
+    [
+            {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/1Mxqyy3pSjf8kZZL4QVxS0"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":1549688
+        }
+,
+        "genres":
+        [
+          "adult standards",
+          "christmas",
+          "easy listening",
+          "jazz christmas",
+          "lounge"
+        ]
+,
+        "href":"https://api.spotify.com/v1/artists/1Mxqyy3pSjf8kZZL4QVxS0",
+        "id":"1Mxqyy3pSjf8kZZL4QVxS0",
+        "images":
+        [
+                    {
+            "height":650,
+            "url":"https://i.scdn.co/image/fc4e0f474fb4c4cb83617aa884dc9fd9822d4411",
+            "width":999
+          }
+,
+          
+          {
+            "height":416,
+            "url":"https://i.scdn.co/image/883de3e492364891543bc0313ffe516626778a16",
+            "width":640
+          }
+,
+          
+          {
+            "height":130,
+            "url":"https://i.scdn.co/image/810f29651e05c9eae5a31f8151c2e05dc46390f9",
+            "width":200
+          }
+,
+          
+          {
+            "height":42,
+            "url":"https://i.scdn.co/image/a283ecdc6252ae305c53d283846cae2e8b22e94c",
+            "width":64
+          }
+        ]
+,
+        "name":"Frank Sinatra",
+        "popularity":76,
+        "type":"artist",
+        "uri":"spotify:artist:1Mxqyy3pSjf8kZZL4QVxS0"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/3IZrrNonYELubLPJmqOci2"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":123400
+        }
+,
+        "genres":
+        [
+          "adult standards",
+          "brill building pop",
+          "bubblegum pop",
+          "cabaret",
+          "christmas",
+          "classic rock",
+          "folk rock",
+          "rock-and-roll",
+          "vocal jazz"
+        ]
+,
+        "href":"https://api.spotify.com/v1/artists/3IZrrNonYELubLPJmqOci2",
+        "id":"3IZrrNonYELubLPJmqOci2",
+        "images":
+        [
+                    {
+            "height":1211,
+            "url":"https://i.scdn.co/image/7a735f3cc039cfa4499b5dd4569d93312baf123c",
+            "width":1000
+          }
+,
+          
+          {
+            "height":775,
+            "url":"https://i.scdn.co/image/c6309a2644fb66ca9effd78804b0947c4dbc964d",
+            "width":640
+          }
+,
+          
+          {
+            "height":242,
+            "url":"https://i.scdn.co/image/ae80ad6167b04ae3af87f29a4dcbc494734d4228",
+            "width":200
+          }
+,
+          
+          {
+            "height":77,
+            "url":"https://i.scdn.co/image/8b929e89cebaa4bebe8ea20d3909b3f015d7ba1f",
+            "width":64
+          }
+        ]
+,
+        "name":"Nancy Sinatra",
+        "popularity":61,
+        "type":"artist",
+        "uri":"spotify:artist:3IZrrNonYELubLPJmqOci2"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/20Pyc1lAUShuvJviO0XqE8"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":303
+        }
+,
+        "genres":
+        [
+          "deep underground hip hop"
+        ]
+,
+        "href":"https://api.spotify.com/v1/artists/20Pyc1lAUShuvJviO0XqE8",
+        "id":"20Pyc1lAUShuvJviO0XqE8",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/55bdf5f1c3f0a7fb8677166aafa0760a4d615076",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/57da17d222208eef07cedab1655b7c5fa5bb6225",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/3e118447d0ab155359d527fa2d5b23d6ddaba167",
+            "width":64
+          }
+        ]
+,
+        "name":"Solo Sinatra",
+        "popularity":31,
+        "type":"artist",
+        "uri":"spotify:artist:20Pyc1lAUShuvJviO0XqE8"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/5fElZYhQFp0lEc4FQVcRu1"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":3272
+        }
+,
+        "genres":
+        [
+          "adult standards"
+        ]
+,
+        "href":"https://api.spotify.com/v1/artists/5fElZYhQFp0lEc4FQVcRu1",
+        "id":"5fElZYhQFp0lEc4FQVcRu1",
+        "images":
+        [
+                    {
+            "height":635,
+            "url":"https://i.scdn.co/image/79f49bbf0046b0f43715233bfc157fd931f7d51c",
+            "width":640
+          }
+,
+          
+          {
+            "height":298,
+            "url":"https://i.scdn.co/image/ce4fdffafafe16712bea677077f7875bdcaec177",
+            "width":300
+          }
+,
+          
+          {
+            "height":63,
+            "url":"https://i.scdn.co/image/f6cd78122ee66d3a980f71af959b862c20f33fc5",
+            "width":64
+          }
+        ]
+,
+        "name":"Frank Sinatra Jr.",
+        "popularity":27,
+        "type":"artist",
+        "uri":"spotify:artist:5fElZYhQFp0lEc4FQVcRu1"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/2ZoufZYy2FcQQSBZbkO6Bb"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":2212
+        }
+,
+        "genres":
+        [
+          "abstract beats",
+          "chillhop"
+        ]
+,
+        "href":"https://api.spotify.com/v1/artists/2ZoufZYy2FcQQSBZbkO6Bb",
+        "id":"2ZoufZYy2FcQQSBZbkO6Bb",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/a8dee963b791ab4ce9067ed6a2140c4f3de1cd67",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/f40d43ccf5fae7072e223d0a78d33740fe34741a",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/14c87be3bb9e8f7d924711b514ddbd5728df1a78",
+            "width":64
+          }
+        ]
+,
+        "name":"Brenk Sinatra",
+        "popularity":38,
+        "type":"artist",
+        "uri":"spotify:artist:2ZoufZYy2FcQQSBZbkO6Bb"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/3v7Yzp7WbKun0yIorgzKIL"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":43
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/3v7Yzp7WbKun0yIorgzKIL",
+        "id":"3v7Yzp7WbKun0yIorgzKIL",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/b24eaf4531ef7eebd27b37f337c96da4f7ecd8ab",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/910eb2afc167a487582f8282dffea922e88bfb8c",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/5287570982942e2425f391e3e111cf410eed0cb7",
+            "width":64
+          }
+        ]
+,
+        "name":"Black Sinatra",
+        "popularity":16,
+        "type":"artist",
+        "uri":"spotify:artist:3v7Yzp7WbKun0yIorgzKIL"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/44jf6NjQMOVWTGvwVnCQJf"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":23
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/44jf6NjQMOVWTGvwVnCQJf",
+        "id":"44jf6NjQMOVWTGvwVnCQJf",
+        "images":
+        [
+                  ]
+,
+        "name":"Ray Sinatra",
+        "popularity":22,
+        "type":"artist",
+        "uri":"spotify:artist:44jf6NjQMOVWTGvwVnCQJf"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/1E3rzFDTfHIV06whRtoKmy"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":47
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/1E3rzFDTfHIV06whRtoKmy",
+        "id":"1E3rzFDTfHIV06whRtoKmy",
+        "images":
+        [
+                  ]
+,
+        "name":"Sleep Sinatra",
+        "popularity":20,
+        "type":"artist",
+        "uri":"spotify:artist:1E3rzFDTfHIV06whRtoKmy"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/3u4FypAnUqGL37gwqsdRzp"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":1404
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/3u4FypAnUqGL37gwqsdRzp",
+        "id":"3u4FypAnUqGL37gwqsdRzp",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/969b6be130eb4db4d558a3af5fca8a6d64f0913f",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/085e1d3461366b7ea62decdb2d1df19d174f67b6",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/9c3bf30484479ac003a61ec05bebcd5af0a7a43b",
+            "width":64
+          }
+        ]
+,
+        "name":"Nancy Sinatra And Lee Hazlewood",
+        "popularity":27,
+        "type":"artist",
+        "uri":"spotify:artist:3u4FypAnUqGL37gwqsdRzp"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/10Qd1A9HLBadtkc9DMG5mY"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":333
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/10Qd1A9HLBadtkc9DMG5mY",
+        "id":"10Qd1A9HLBadtkc9DMG5mY",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/0613ab1225ec869fcf3a8a5770409da3a05713cd",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/03b5a4c7eb2d877ab44eca61e254b4b407bc62eb",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/c4e3cdc0c2c9096b96ef250b0bca29b85072734c",
+            "width":64
+          }
+        ]
+,
+        "name":"Frank Sinatra with Orchestra",
+        "popularity":24,
+        "type":"artist",
+        "uri":"spotify:artist:10Qd1A9HLBadtkc9DMG5mY"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/5DG3mpDVLAWZLU0BQXcuQO"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":141
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/5DG3mpDVLAWZLU0BQXcuQO",
+        "id":"5DG3mpDVLAWZLU0BQXcuQO",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/9a8184e298a07b335d3d487ac93663e36de70550",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/6f62dff33c95d53f832d0a54568167e511d906fe",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/640e5b28a8349b2063482bb9f91a2e30c833c638",
+            "width":64
+          }
+        ]
+,
+        "name":"Sinatra",
+        "popularity":1,
+        "type":"artist",
+        "uri":"spotify:artist:5DG3mpDVLAWZLU0BQXcuQO"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/0bvrq5TSw7Pe5AbXZUZHYp"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":0
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/0bvrq5TSw7Pe5AbXZUZHYp",
+        "id":"0bvrq5TSw7Pe5AbXZUZHYp",
+        "images":
+        [
+                  ]
+,
+        "name":"Sinatra",
+        "popularity":0,
+        "type":"artist",
+        "uri":"spotify:artist:0bvrq5TSw7Pe5AbXZUZHYp"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/0oJfxALldsBCIeqbywKWwc"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":602
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/0oJfxALldsBCIeqbywKWwc",
+        "id":"0oJfxALldsBCIeqbywKWwc",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/d5a652b16c4828a34b66931c73cc1c9a33855e51",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/d363777271771b7c3ab95b9b3342aa1aff273a9a",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/015f71f0863831cb2a6a980f0f581bed3946175b",
+            "width":64
+          }
+        ]
+,
+        "name":"Dank Sinatra",
+        "popularity":9,
+        "type":"artist",
+        "uri":"spotify:artist:0oJfxALldsBCIeqbywKWwc"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/4As1RAR0PcJElUDIhUA8rz"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":16
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/4As1RAR0PcJElUDIhUA8rz",
+        "id":"4As1RAR0PcJElUDIhUA8rz",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/1f08c8a808fde02ceb4fd8a65f361adb0d6b2adb",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/475b88f23f5a22548afb48cb402e82971fd34257",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/f37db0a066e4949587cdb90dcf5b077123ceb7b4",
+            "width":64
+          }
+        ]
+,
+        "name":"Shine Sinatra",
+        "popularity":7,
+        "type":"artist",
+        "uri":"spotify:artist:4As1RAR0PcJElUDIhUA8rz"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/4YeoxSRbgcw5TeTkI4f8bt"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":0
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/4YeoxSRbgcw5TeTkI4f8bt",
+        "id":"4YeoxSRbgcw5TeTkI4f8bt",
+        "images":
+        [
+                  ]
+,
+        "name":"Jah Sinatra",
+        "popularity":6,
+        "type":"artist",
+        "uri":"spotify:artist:4YeoxSRbgcw5TeTkI4f8bt"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/4uE1NWjbRoo7zD2OZmvndT"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":83
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/4uE1NWjbRoo7zD2OZmvndT",
+        "id":"4uE1NWjbRoo7zD2OZmvndT",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/e2c9d83f8c5b64e6057e51c8c1c18d69999ca700",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/6dec0e8902fcaa925482e275b4b03634506976f9",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/36a0eae65284ccdbd9d2fd8fb97f43c5f5910517",
+            "width":64
+          }
+        ]
+,
+        "name":"Tommy Dorsey | Frank Sinatra",
+        "popularity":12,
+        "type":"artist",
+        "uri":"spotify:artist:4uE1NWjbRoo7zD2OZmvndT"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/3qrdTy0IyRgqjXHNCOoSST"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":8
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/3qrdTy0IyRgqjXHNCOoSST",
+        "id":"3qrdTy0IyRgqjXHNCOoSST",
+        "images":
+        [
+                  ]
+,
+        "name":"Christina Sinatra",
+        "popularity":11,
+        "type":"artist",
+        "uri":"spotify:artist:3qrdTy0IyRgqjXHNCOoSST"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/48YZhvISKbV8N9eZAicB6J"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":8
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/48YZhvISKbV8N9eZAicB6J",
+        "id":"48YZhvISKbV8N9eZAicB6J",
+        "images":
+        [
+                  ]
+,
+        "name":"French Sinatra",
+        "popularity":4,
+        "type":"artist",
+        "uri":"spotify:artist:48YZhvISKbV8N9eZAicB6J"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/74hwjXj6NyHHbXujQ8yFwB"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":5
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/74hwjXj6NyHHbXujQ8yFwB",
+        "id":"74hwjXj6NyHHbXujQ8yFwB",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/973781aa45031f7a4db07cf84a56a4618067ffcd",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/58de1ae1379727bd45d21574ee60a0cb629996ad",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/9e5cb4aa93dd5ccab7fefb9380461058b1cce9c7",
+            "width":64
+          }
+        ]
+,
+        "name":"Elvis Sinatra",
+        "popularity":1,
+        "type":"artist",
+        "uri":"spotify:artist:74hwjXj6NyHHbXujQ8yFwB"
+      }
+,
+      
+      {
+        "external_urls":
+        {
+          "spotify":"https://open.spotify.com/artist/4DrkEAGtVmqk81tDFC6re3"
+        }
+,
+        "followers":
+        {
+          "href":null,
+          "total":30
+        }
+,
+        "genres":
+        [
+                  ]
+,
+        "href":"https://api.spotify.com/v1/artists/4DrkEAGtVmqk81tDFC6re3",
+        "id":"4DrkEAGtVmqk81tDFC6re3",
+        "images":
+        [
+                    {
+            "height":640,
+            "url":"https://i.scdn.co/image/08c1971659e13bf7934a032811131304e40c6b15",
+            "width":640
+          }
+,
+          
+          {
+            "height":300,
+            "url":"https://i.scdn.co/image/da17e1321d978869c659c36ad272e5bb79ecab07",
+            "width":300
+          }
+,
+          
+          {
+            "height":64,
+            "url":"https://i.scdn.co/image/1aa98ca62d6eecce67c54597bf436b59bf9657cf",
+            "width":64
+          }
+        ]
+,
+        "name":"Tom Sinatra",
+        "popularity":1,
+        "type":"artist",
+        "uri":"spotify:artist:4DrkEAGtVmqk81tDFC6re3"
+      }
+    ]
+,
+    "limit":20,
+    "next":"https://api.spotify.com/v1/search?query=sinatra&type=artist&offset=20&limit=20",
+    "offset":0,
+    "previous":null,
+    "total":178
+  }
+}

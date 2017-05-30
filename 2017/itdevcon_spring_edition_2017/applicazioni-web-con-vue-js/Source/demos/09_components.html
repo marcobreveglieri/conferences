@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ITDevCon 2017 SE - Vue.js + Delphi</title>
+    <script src="../libs/vue-2.3.3.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <ul>
+        <todo-item
+                v-for="task in taskList"
+                v-bind:key="task.id"
+                v-bind:task="task"
+        />
+    </ul>
+</div>
+
+<script>
+
+    (function() {
+
+        Vue.component('todo-item', {
+            props: ['task'],
+            template: '<li>{{ task.text }}</li>'
+        });
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                taskList: [
+                    { id: 0, text: "Sviluppa" },
+                    { id: 1, text: "Dormi" },
+                    { id: 2, text: "Ripeti" }
+                ]
+            }
+        });
+
+    })();
+
+
+</script>
+
+</body>
+</html>

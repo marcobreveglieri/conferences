@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ITDevCon 2017 SE - Vue.js + Delphi</title>
+    <script src="../libs/vue-2.3.3.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <p v-if="visible">Ora mi vedi!</p>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                visible: true
+            }
+        });
+    </script>
+
+</body>
+</html>

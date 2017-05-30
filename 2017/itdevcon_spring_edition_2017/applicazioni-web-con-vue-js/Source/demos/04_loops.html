@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ITDevCon 2017 SE - Vue.js + Delphi</title>
+    <script src="../libs/vue-2.3.3.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <ol>
+            <li v-for="todo in todoList">
+                {{ todo.text }}
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                todoList: [
+                    { text: "Imparare Vue" },
+                    { text: "Integrarlo con Delphi" },
+                    { text: "Costruire applicazioni spaziali!" }
+                ]
+            }
+        });
+    </script>
+
+</body>
+</html>

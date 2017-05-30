@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ITDevCon 2017 SE - Vue.js + Delphi</title>
+    <script src="../libs/vue-2.3.3.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <p>{{ message }}</p>
+        <input v-model="message"/>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                message: "REDRUM"
+            }
+        });
+    </script>
+
+</body>
+</html>

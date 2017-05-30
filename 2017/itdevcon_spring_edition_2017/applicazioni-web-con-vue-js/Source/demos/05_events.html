@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ITDevCon 2017 SE - Vue.js + Delphi</title>
+    <script src="../libs/vue-2.3.3.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse</button>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                message: "REDRUM"
+            },
+            methods: {
+                reverseMessage: function () {
+                    this.message = this.message.split("").reverse().join("");
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
