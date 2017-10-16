@@ -1,0 +1,47 @@
+object SharedWidgetFrame: TSharedWidgetFrame
+  Margins.Left = 4.000000000000000000
+  Margins.Top = 4.000000000000000000
+  Margins.Right = 4.000000000000000000
+  Margins.Bottom = 4.000000000000000000
+  Size.Width = 480.000000000000000000
+  Size.Height = 299.000000000000000000
+  Size.PlatformDefault = False
+  object TileRectangle: TRectangle
+    Align = Client
+    Fill.Color = claTeal
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Sides = []
+    Size.Width = 480.000000000000000000
+    Size.Height = 299.000000000000000000
+    Size.PlatformDefault = False
+    object TitleText: TText
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 462.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Title'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00020000000000000004000000}
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Leading
+      object TitleGlowEffect: TGlowEffect
+        Softness = 0.100000001490116100
+        GlowColor = claWheat
+        Opacity = 0.949999988079071100
+      end
+    end
+    object WidgetLayout: TLayout
+      Align = Client
+      Size.Width = 472.000000000000000000
+      Size.Height = 254.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+end

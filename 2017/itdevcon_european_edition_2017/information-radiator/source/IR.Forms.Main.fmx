@@ -1,0 +1,106 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Information Radiator'
+  ClientHeight = 1080
+  ClientWidth = 1920
+  Fill.Kind = Gradient
+  Fill.Gradient.Points = <
+    item
+      Color = xFF061134
+      Offset = 0.000000000000000000
+    end
+    item
+      Color = xFF121943
+      Offset = 1.000000000000000000
+    end>
+  Fill.Gradient.Style = Radial
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object ContainerLayout: TScaledLayout
+    Align = Client
+    OriginalWidth = 1920.000000000000000000
+    OriginalHeight = 1080.000000000000000000
+    Size.Width = 1920.000000000000000000
+    Size.Height = 1080.000000000000000000
+    Size.PlatformDefault = False
+    object GridPanelLayout: TGridPanelLayout
+      Align = Client
+      Size.Width = 1920.000000000000000000
+      Size.Height = 1080.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          SizeStyle = Absolute
+          Value = 480.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 980.000000000000000000
+        end
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = LeftColumnLayout
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = CenterColumnLayout
+          Row = 0
+        end
+        item
+          Column = 2
+          Control = RightColumnLayout
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object LeftColumnLayout: TFlowLayout
+        Align = Client
+        Size.Width = 480.000000000000000000
+        Size.Height = 1080.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Justify = Left
+        JustifyLastLine = Left
+        FlowDirection = LeftToRight
+        VerticalGap = 5.000000000000000000
+      end
+      object CenterColumnLayout: TFlowLayout
+        Align = Client
+        Size.Width = 980.000000000000000000
+        Size.Height = 1080.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Justify = Center
+        JustifyLastLine = Center
+        FlowDirection = LeftToRight
+      end
+      object RightColumnLayout: TFlowLayout
+        Align = Client
+        Size.Width = 460.000000000000000000
+        Size.Height = 1080.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Justify = Left
+        JustifyLastLine = Left
+        FlowDirection = LeftToRight
+      end
+    end
+  end
+end
