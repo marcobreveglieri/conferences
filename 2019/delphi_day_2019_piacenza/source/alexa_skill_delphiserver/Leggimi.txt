@@ -1,0 +1,7 @@
+Questo demo richiede le librerie di terze parti riportate di seguito.
+
++ DelphiMVCFramework (https://github.com/danieleteti/delphimvcframework)
++ LoggerPro (https://github.com/danieleteti/loggerpro)
+
+Scaricale separatamente usando il tuo client Git preferito e imposta il "Library Path" nelle
+opzioni di Delphi o nelle opzioni specifiche del progetto.

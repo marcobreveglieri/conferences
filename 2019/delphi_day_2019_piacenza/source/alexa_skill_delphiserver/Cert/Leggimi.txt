@@ -1,0 +1,15 @@
+Salva in questa directory i file che costituiscono i certificati e la chiave generata tramite il
+tool OpenSsl come da istruzioni riportate qui:
+https://developer.amazon.com/it/docs/custom-skills/configure-web-service-self-signed-certificate.html
+
+Alla fine del processo, i file presenti nella cartella dovranno essere tre:
+- yourname.cnf
+- yourname.key
+- yourname.pem
+
+Cerca e sostituisci questi nomi nel sorgente Delphi del server Web per configurare SSL.
+
+Infine, scarica separatamente le librerie "openssl-lib" (i file "libeay32.dll" e "ssleay32.dll")
+e assicurati di copiarli nella stessa cartella dell'eseguibile.
+
+NOTA! La porta da utilizzare obbligatoriamente è la 443, ossia quella standard per SSL!

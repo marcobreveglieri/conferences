@@ -1,0 +1,189 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "pizza al delphi day",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "getListOfPizzas",
+                    "slots": [],
+                    "samples": [
+                        "Dimmi le pizze",
+                        "Quali sono le pizze",
+                        "Che pizze fai",
+                        "Che pizze ci sono"
+                    ]
+                },
+                {
+                    "name": "getDetailsOfPizza",
+                    "slots": [
+                        {
+                            "name": "nameOfPizza",
+                            "type": "slotForPizzaName",
+                            "samples": [
+                                "{nameOfPizza}",
+                                "Parlo della pizza {nameOfPizza}",
+                                "Alla pizza {nameOfPizza}",
+                                "La pizza {nameOfPizza}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Com'è la {nameOfPizza}",
+                        "Che ingredienti ci sono nella {nameOfPizza}",
+                        "Quali sono gli ingredienti della pizza {nameOfPizza}",
+                        "Cosa c'è nella pizza {nameOfPizza}",
+                        "Parlami della pizza {nameOfPizza}"
+                    ]
+                },
+                {
+                    "name": "orderPizza",
+                    "slots": [
+                        {
+                            "name": "nameOfPizza",
+                            "type": "slotForPizzaName",
+                            "samples": [
+                                "Vada per una {nameOfPizza}",
+                                "Voglio una {nameOfPizza}",
+                                "Ordino una {nameOfPizza}",
+                                "Fammi una {nameOfPizza}",
+                                "Preparami una {nameOfPizza}",
+                                "{nameOfPizza}",
+                                "Desidero una {nameOfPizza}",
+                                "Vorrei una {nameOfPizza}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Fammi una {nameOfPizza}",
+                        "Voglio mangiare una {nameOfPizza}",
+                        "Voglio mangiare la {nameOfPizza}",
+                        "Vorrei la pizza {nameOfPizza}",
+                        "Voglio ordinare la pizza {nameOfPizza}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "slotForPizzaName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Margherita"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "getDetailsOfPizza",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "nameOfPizza",
+                            "type": "slotForPizzaName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.116103984298.470907343693"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "orderPizza",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "nameOfPizza",
+                            "type": "slotForPizzaName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.915770602838.201773848083"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.116103984298.470907343693",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "A quale pizza fai riferimento?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Quale pizza vuoi approfondire?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Qual è la pizza che ti interessa?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.321459985865",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Allora vada per una {nameOfPizza} . Ok?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Hai proprio deciso di papparti una {nameOfPizza} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Sei proprio sicuro di volere una {nameOfPizza} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Procedo con la cottura di una {nameOfPizza} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.915770602838.201773848083",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Che pizza desideri?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Che pizza posso prepararti?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Che pizza vuoi ordinare?"
+                    }
+                ]
+            }
+        ]
+    }
+}
