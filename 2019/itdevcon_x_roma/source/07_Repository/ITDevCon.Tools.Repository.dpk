@@ -1,0 +1,44 @@
+package ITDevCon.Tools.Repository;
+
+{$R *.res}
+{$R *.dres}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'ITDevCon Tools Repository Expert'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  DesignIDE;
+
+contains
+  ITDevCon.Tools.Repository.SampleWizard in 'ITDevCon.Tools.Repository.SampleWizard.pas',
+  ITDevCon.Tools.Repository.ProjectCreator in 'ITDevCon.Tools.Repository.ProjectCreator.pas',
+  ITDevCon.Tools.Repository.Shared in 'ITDevCon.Tools.Repository.Shared.pas',
+  ITDevCon.Tools.Repository.ProjectFile in 'ITDevCon.Tools.Repository.ProjectFile.pas',
+  ITDevCon.Tools.Repository.ProjectDialog in 'ITDevCon.Tools.Repository.ProjectDialog.pas' {ProjectDialogForm};
+
+end.

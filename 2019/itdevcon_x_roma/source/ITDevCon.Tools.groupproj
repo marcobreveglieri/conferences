@@ -1,0 +1,132 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{9F46220E-F981-48F3-A94D-B1ACA081378F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="00_HelloWorld\ITDevCon.Tools.Basic.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="01_MyBlog\ITDevCon.Tools.Blog.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="02_AutoSave\ITDevCon.Tools.AutoSave.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="03_KeyBindings\ITDevCon.Tools.KeyBindings.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="04_SplashScreen\ITDevCon.Tools.SplashScreen.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="05_ReadCode\ITDevCon.Tools.CodeReading.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="06_WriteCode\ITDevCon.Tools.CodeWriting.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="07_Repository\ITDevCon.Tools.Repository.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="08_ProjectMgr\ITDevCon.Tools.ProjectMgr.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ITDevCon_Tools_Basic">
+        <MSBuild Projects="00_HelloWorld\ITDevCon.Tools.Basic.dproj"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_Basic:Clean">
+        <MSBuild Projects="00_HelloWorld\ITDevCon.Tools.Basic.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_Basic:Make">
+        <MSBuild Projects="00_HelloWorld\ITDevCon.Tools.Basic.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_Blog">
+        <MSBuild Projects="01_MyBlog\ITDevCon.Tools.Blog.dproj"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_Blog:Clean">
+        <MSBuild Projects="01_MyBlog\ITDevCon.Tools.Blog.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_Blog:Make">
+        <MSBuild Projects="01_MyBlog\ITDevCon.Tools.Blog.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_AutoSave">
+        <MSBuild Projects="02_AutoSave\ITDevCon.Tools.AutoSave.dproj"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_AutoSave:Clean">
+        <MSBuild Projects="02_AutoSave\ITDevCon.Tools.AutoSave.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_AutoSave:Make">
+        <MSBuild Projects="02_AutoSave\ITDevCon.Tools.AutoSave.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_KeyBindings">
+        <MSBuild Projects="03_KeyBindings\ITDevCon.Tools.KeyBindings.dproj"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_KeyBindings:Clean">
+        <MSBuild Projects="03_KeyBindings\ITDevCon.Tools.KeyBindings.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_KeyBindings:Make">
+        <MSBuild Projects="03_KeyBindings\ITDevCon.Tools.KeyBindings.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_SplashScreen">
+        <MSBuild Projects="04_SplashScreen\ITDevCon.Tools.SplashScreen.dproj"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_SplashScreen:Clean">
+        <MSBuild Projects="04_SplashScreen\ITDevCon.Tools.SplashScreen.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_SplashScreen:Make">
+        <MSBuild Projects="04_SplashScreen\ITDevCon.Tools.SplashScreen.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_CodeReading">
+        <MSBuild Projects="05_ReadCode\ITDevCon.Tools.CodeReading.dproj"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_CodeReading:Clean">
+        <MSBuild Projects="05_ReadCode\ITDevCon.Tools.CodeReading.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_CodeReading:Make">
+        <MSBuild Projects="05_ReadCode\ITDevCon.Tools.CodeReading.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_CodeWriting">
+        <MSBuild Projects="06_WriteCode\ITDevCon.Tools.CodeWriting.dproj"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_CodeWriting:Clean">
+        <MSBuild Projects="06_WriteCode\ITDevCon.Tools.CodeWriting.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_CodeWriting:Make">
+        <MSBuild Projects="06_WriteCode\ITDevCon.Tools.CodeWriting.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_Repository">
+        <MSBuild Projects="07_Repository\ITDevCon.Tools.Repository.dproj"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_Repository:Clean">
+        <MSBuild Projects="07_Repository\ITDevCon.Tools.Repository.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_Repository:Make">
+        <MSBuild Projects="07_Repository\ITDevCon.Tools.Repository.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_ProjectMgr">
+        <MSBuild Projects="08_ProjectMgr\ITDevCon.Tools.ProjectMgr.dproj"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_ProjectMgr:Clean">
+        <MSBuild Projects="08_ProjectMgr\ITDevCon.Tools.ProjectMgr.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ITDevCon_Tools_ProjectMgr:Make">
+        <MSBuild Projects="08_ProjectMgr\ITDevCon.Tools.ProjectMgr.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ITDevCon_Tools_Basic;ITDevCon_Tools_Blog;ITDevCon_Tools_AutoSave;ITDevCon_Tools_KeyBindings;ITDevCon_Tools_SplashScreen;ITDevCon_Tools_CodeReading;ITDevCon_Tools_CodeWriting;ITDevCon_Tools_Repository;ITDevCon_Tools_ProjectMgr"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ITDevCon_Tools_Basic:Clean;ITDevCon_Tools_Blog:Clean;ITDevCon_Tools_AutoSave:Clean;ITDevCon_Tools_KeyBindings:Clean;ITDevCon_Tools_SplashScreen:Clean;ITDevCon_Tools_CodeReading:Clean;ITDevCon_Tools_CodeWriting:Clean;ITDevCon_Tools_Repository:Clean;ITDevCon_Tools_ProjectMgr:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ITDevCon_Tools_Basic:Make;ITDevCon_Tools_Blog:Make;ITDevCon_Tools_AutoSave:Make;ITDevCon_Tools_KeyBindings:Make;ITDevCon_Tools_SplashScreen:Make;ITDevCon_Tools_CodeReading:Make;ITDevCon_Tools_CodeWriting:Make;ITDevCon_Tools_Repository:Make;ITDevCon_Tools_ProjectMgr:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
